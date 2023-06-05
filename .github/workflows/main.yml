@@ -16,6 +16,6 @@ jobs:
       - name: Deploy to Heroku
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "YOUR APP's NAME" #Must be unique in Heroku
-          heroku_email: "YOUR EMAIL"
+          heroku_api_key: ${{secrets.c85bc42b-3303-48ef-9b32-64b439121171}}
+          heroku_app_name: api-p7-oc
+          heroku_email: rim_delage@hotmail.com
