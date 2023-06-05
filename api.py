@@ -52,14 +52,13 @@ app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
 # Importer le modèle entrainé lightGBM
-dirname = 'C:/Users/Rimo/Desktop/openclassrooms/Projets/Projet7/Projet7_livrable/'
-model = pickle.load(open(dirname+'Models/best_model_lgbm.pkl', 'rb'))
+model = pickle.load(open('best_model_lgbm.pkl', 'rb'))
 
 
 # Chargement du dataset
-data = reduce_mem_usage((pd.read_csv(dirname+'Data/df_1000.csv')))
+data = reduce_mem_usage((pd.read_csv('df_1000.csv')))
 data.set_index('SK_ID_CURR', inplace = True)
-data.drop('TARGET', axis=1, inplace=True)
+data.drop(['TARGET','ypred1'], axis=1, inplace=True)
 
 
 #extraction de la liste de clients

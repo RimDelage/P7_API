@@ -1,5 +1,5 @@
 import requests
-id_client = 100002
+id_client = 100004
 # Set the API URL
 url = 'http://localhost:4000/predict/'+str(id_client)
 
