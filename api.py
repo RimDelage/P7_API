@@ -68,7 +68,7 @@ def list_id_clients():
 
 @app.route('/', methods=['GET'])
 def Hello ():
-    return 'hellooooo'
+    return 'hello'
 
 
 # @app.route('/predict/<id_client>', methods=['GET'])
