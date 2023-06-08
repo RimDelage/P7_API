@@ -20,6 +20,6 @@ jobs:
           heroku_app_name: api-p7-oc
           heroku_email: rim_delage@hotmail.com
 
-      - name: run to Heroku
-        run: |
-          git push heroku main
+      # - name: run to Heroku
+      #   run: |
+      #     git push heroku main
