@@ -16,7 +16,7 @@ jobs:
       - name: test unitaire
         run: |
             pip install unitest
-            python -m unittest .\api_testUnitaire.py
+            python -m unittest api_testUnitaire
 
 
       - name: Deploy to Heroku
