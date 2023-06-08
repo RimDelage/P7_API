@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
       - name: test unitaire
         run: |
             pip install unitest
-            python -m unitest ./api_testunitaire.py
+            python -m unittest .\api_testUnitaire.py
 
 
       - name: Deploy to Heroku
