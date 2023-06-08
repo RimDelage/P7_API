@@ -19,3 +19,7 @@ jobs:
           heroku_api_key: ${{secrets.c85bc42b-3303-48ef-9b32-64b439121171}}
           heroku_app_name: api-p7-oc
           heroku_email: rim_delage@hotmail.com
+
+      - name: run to Heroku
+        run: |
+          git push heroku main
